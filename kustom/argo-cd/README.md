@@ -1,0 +1,2 @@
+# Argo-CD
+[Argo-cd](https://argo-cd.readthedocs.io/en/stable/) helps keep our kubernetes cluster in sync with this repository. Anytime a change is made to this repo, argocd will take those changes and apply them to the cluster in order to keep it in sync. This gives us the bennifit of having versioning, records, and consistent deployments.

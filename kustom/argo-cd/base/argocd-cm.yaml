@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+data:
+  repositories: |
+    - url: git@github.com:SelfhostedPro/argo-cd-aoa-boilerplate.git
+      sshPrivateKeySecret:
+        name: argo-github-key
+        key: sshPrivateKey
+  helm.repositories: |
+    - name: stable
+      url: https://kubernetes-charts.storage.googleapis.com

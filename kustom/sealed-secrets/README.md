@@ -1,0 +1,4 @@
+# Sealed Secrets
+Bitnami sealed secrets allow us to asymmetrically encrypt sensitive data and have our kubernetes cluster "unseal"(decrypt) them for use with our various applications. This allows us to store those secrets in github safely and have argo-cd use them when deploying apps and itself.
+
+Because the secret is stored in the kubernetes cluster, if we want to redeploy without having to regenerate all of our sealed secrets we'll need to back them up and store them in our password manager. Instructions on this process (and restoring) are available [here](https://github.com/bitnami-labs/sealed-secrets#how-can-i-do-a-backup-of-my-sealedsecrets).

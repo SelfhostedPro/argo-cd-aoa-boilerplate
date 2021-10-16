@@ -1,0 +1,41 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: argo-github-key
+  namespace: argocd
+spec:
+  encryptedData:
+    sshPrivateKey: AgBLpP8OcwGYxV8GFkYdxNu2cZnSuGb6ctfyodMh6WlApFgOV76hoz/NEJzj/P0YKT+lwVg8k6cPW9Z2LneLk5CnLoX9ZvH18l9ofGJX5kwmQf3VFY4kv71BZSsVrqnJDvlufwfP7dGdjih7roiQJNxbIYaMAcgszWC17B4LbPM5OZveThhpSqjXXFRm2nwtbqvV+WhHMVslhKisGy/0VqMWA6SYcKcjcy2G4RZ+c/sEG1V41ecxFm8ssylC8dKQHkPkZqVvr3P0IsIhDRX1zgIcjMfi8M0kuAXzCJboKPKH/sRJVCY+RnCDZRRgIh1yDmXQBBUaNnv70ImmFISXnSiKKq5GLwpqQ1iA+JjyIu+v6W7RnH6LoVKFsCfLMXRs7vKXKTShbu8Eg1pDhBfAylewG3Vih/F2Unot2X0b50H81alSpdGkW8uZMeb0YJr1X2ThsI8dkJLIiEox5JXr8+ITdQ1G2Y2frXPMkM6gia2cSUIUrm9qj5sapXNyYNKawNcZZubvyvBBehrlUHN2e677JbJRLzZ+Tys71plnF0VNlMu0KomDtJ6Pcve8dEz6WfBbVjuzRr4JdvmBbuo9x2WZfZxDnvysDfcZwRrAWJZ5tJSJsDk/mkBf8VK1djE5TUBvcfux/hdDXyJNSz+iBNHh3mGA59c//RuVOZiNSjO15VLAKHCVmTd4S0wHXrJWJU0EMN04heS+hbq0c56HgrVQdQEU4GzhAGRFWyCus2pJWpfVOfW4MRNQocHFKOp61rbig4r2iecenkBeIuMJnoz8ia++ATaFmqMlK2yOA95fCgG45wqAu2BS+i7uMD4BKWAGjQZoXNnt61dZ7Rd3arp8Vj14evf006UV12tWe3Pthl+Go9bk9B9rynrnrNThnGLwdkK8KrTs2+q5pjL4/Ja5pTpyKe3gObDkBw9/g0QdHKhyrQIvVT0vD+Yldu5Q6b+245wz4WTno7QTKSHOx2unrbhafqSUJWUDlBm8K2+K1EI8Xx5cHqtE1WUSMsznQdyYDv++TSe4Z6kSKvmxQ8PU2YOq87lYA6XD/XBV3IeginUlvlpNE6eWzrTlz8SS9tETCKrwWjgTMxvjTYd6/f8+0VG8Eq1JvM70hgu+++DUmm3NSepPgRWQzHEGwndM9GXm3845Jj5PO74Vs7BB/i8WvOnlrSQW+LqwgYbA95al+ippKdJgKjfhhfwbjTZxCKxK//Mo1qowPFNXzlzDbUUPzHyKan2cWfMWUFyQmwzxBIU+OZRZ4u11zMfy9flK/fwMoxHvXDzzhRj/Wq9bvj/FOZVSMvPg4z7Iq/0LbOR4bU6KJ2a+HjgI4EEEnLFjvRwenFcraAI+e/hH+S4IcX8kk5Og1igwYOzx0KWqHSHi8Zz6QjsiPc/9xW8LfPewEas4P9mT8md7E3DUKGAIHaliCMYMhDDexncEA7pc6RqUK7JE4+PiIsE/2jU7QjN/sT5zy8P/MyZaUQNKFbbLI6Wf8jAV/qIxqCn5DsiAZZVD5PWwSaPVOcYWlCDwEcrEN/XgGAmFXq8NOqGrKv4A0sSdVChBWkvlGfoMhKxwMPniWaftNOKMkMIB4CxCmjdGsqhi4m/o+irfEu8AS8rvb6whSCrw35m7uzCqGPPHwEFTV7HfR0sD310hlV9raGblTMnIRSw5WLWT0Xi5OtXDhlqHPp37HpVcrbrrT/OZ/KAhkZdpyyPE3MhbwgG091MeC900GJAuCzC7Hk41rpxGm/ULIu0rA/DxoYY0wYXyqxm9Or4tohcjzbw6EKcoPNn8f9b3BLHIbOg5CP5IVvqJymSvZkNLGY2KU7pHO/2xAQLciesDWe3Hjy84YAHHs71Y99+lYX3OWqvScMLpwyGx+6ydcd4j72P2tkXYPDtdsZz1FkYdA8KZ1MPy3NgmGqGTd9vt7azbM7NG6O4p2YVjhPqFoNR5tamF3GXW+bVXkUCpxh7H4zUYq6NKy8hNtAKF2xL3dnS+Yl6VPQ1824wsBcbewa3sVF4oaoT/olKT80mbQQpoiy7qngU4Rq1och9OtdRME88sns0H7TgK6POAkCIFL6wK14ABrrzeIT4n7C0YfAY9/p073wY58DOdhgAhBUTBI5qJjf595Y4FvZnoDepW0yV2/hKTOK7yNYm2be8DbINIzVocTIp4fFrceLnhUjbfzsn45PXT3wNk4fwiu3je47K53ScYZVtUrzgb+k0Se4imISebAyopwwb88d+Xb2mLQC/Form2IoyBMNQq5jtGCtT/26678+86NG0/T4el4kqixp+rcwUYDKMlmpkRBqWHm+zXH4yObU41K1GRQkR2yOB69qgzf0zReZZ6xMK/C4oxM28byynqOxpQQ7OCnbPVWR4EtirLMTvGandfD4wLZo6OIfSkKjPFewjMnLgRCaKfkHQx2bpcbujo81tuu/c3lrMBaiqsfKFZadsFVsFpRQoW6xtghabvpwETnsioKLptj8mIXIVcwNFYNYG1po0wEHYUdQlMfxYPZ8lwYlW0wiTzQmE5Hwo3xBGf38QYIG21piP9mhUwXazYS0kCKJ49epjJpZAYBn2qLbePHktV5bRPuRenI/DbQYlnDwc/YggVTuW9xSDg4i4/ecT0Dxfnta824xSfDGLYSiFiqnZAfhrKmOGAwRvLpwxySvgP84fNRX1L4GlnABVh3DYmxfXfxT7LGDHKgd2DTenwyloel6xJu5q3OjV0LlZup7t508w9cNmQxpzAssro+YMxoTGhSzfSSY8MPa4/mdSzBzAQ9i4AgWa28BJFHV0Ry4I9K5fR+MyG6w1n50f5DuKUOnCB/tqrfxlh8KEJ/M+IViy5oZOGYvWmF1R4c57qhQ6UhWvuJXXWZM7KVlabnclPJxHD5BzQDQXtw05MYpWGEnV2MyCmSq17xhpYKZR8wsEGy/HP71bA0UAYQDfkMNIoXNZo+TGhjHsLsSTGV4b4YvqY4sq1zN/D2iZuvM62s42rgKdKuXZ6DkFgkgEuC8ebhSlxcIA6+I/iGevyQgQMEvXSxQSxVVur7zCOPlVIkK3YibP5tOyG1UD1xqs2wBIi7lMwS9+N2XTOMhEO7+RwIW/aT3C3hSO+20T94HxAdYUQ8rSf5RnsKuFn+6rVvHZojCc2cDOU55vPGB+nG1gN+/5ySyi9Vo4HIzKBHS/lZPbvU1CESRw58U6BNBOYCZfb+6mRScw6h1r983NPwD2PHv6wV2t/9SPjvRRy0XHMfMSm/ygyn7VLR0rJ8A+HGYhoNy4t40RdeXRu9WQvoovor0UQJPwJYRoWdBkZ7smTwHam7QvxKz9SRPggZ47HJaSldQo5JzlWDjIyXMnUDw30vlX4FzrGf+gkOFhK7lCD8ivh5fUnDdkPhFIsfoM14ueKpyFbCgd8HIzRilmUag3HA5LUL9Acp1h0uf6Pw8sB6w5ul1k2LrkpKxQT8bTtw9sFXgoArqtA4tEyRU58EyefSN0gb5Ti3o/uYXpo9++uDYol1ZVbJcGsmkkzj2mX1buWcB5IjjVjIe/TT1bqPLU85rbdwwFd6JGd4GM2dmDuHbTvK+aLdRGJK1pelvRscz3Oh4XIpltw9fVz9I0HNoFG8naA5kK989TIysashje3H51Sffagxj7th61Wv7rtEzKKWtmiUqHRnYiAYj0+BnSuuW97nLv+1m0y32Tw7xBICB1Y7dIJUdRQaZ19hxfnSPH4CX65AdUe+F7YGTMgpPEXpdtFSH3Esa4IWudYPhrzSI/BLiEO1gYTEq/v8seM1xxghAtfu+TX9WNscgb6hA51FQvNnpm2gQjRw+sHijAOEVj4fklNX5quhjuQJ2pLX/uwJl1yQ1jpmhjYb+b2xYhz0X9BErfQD05Fjam7Pv6aCn7FKHCQOQnYZ2FU8UkrbxIjs1f+NVUVwRv16bTmoXSRzQJPlqrS7YuhVcKyEr0MCbMy8ESGFBzLCEoC/ZtF2r+EgK9L1E3YzidkMgEYWRUk8xDWEWBRgZ/UQoBpwfyDdBNGDJ9976QT5TB2GS9o62GXY+gJ81bNpe60bjAPKb2ks5huzosrvIbHinwi7VxnrG3eSOg6LYuzU8T5G3l1wJFgXjpuTTzPVTF37VmloJyokPN1j8DKgkhzK6fg/KQLzIZ+T90rYYD+JaAR4NYUtSYDmtzxXjt1vQkGNmgx3HoM7n5TRA==
+    url: AgBvgjpBdttjJtEbjdzURoLlBOKma9bdY6jxHRXb4kWVCLQAU2d3PEjOjxfAIPPLGa47CgCAB+ytF0kt5xMqMMblNfzYldwjPGeIt62bdfTbk+QSWdByxqMR1N5KrDV50dgp5mdjXjKHXx7Y0QAidiXZQ+NEE748eNpwjci33bt5crZcK9WJuurZUvuPruJJZ2nc49l9NcJh3VTlnp3Lt8Jr/+o95rPbbWlaS+5qQWShzKxGtgAF2cmx8Pt6aqIKR0plNEWlJDcrZTZBbz2/C+yvCT0Z+NJjzUprGAWQ14ddqu689gPbe06UEoBvc3FcPJlUZa5CqgBAzEpLkbdQjANyqFPYG0n8RPDsPOUbBowaGCnmiTY9xVrYDfzmk745tjz7Ii0pKC0kPmkfKLWDaCOh6GmZIVC5Hm36vljEePzRnKYki/Yb0TXVv44SN/CYGxKv4NwTD+sTn9QMT2uS8DC8k7QjZiuTJyGvQ1oRv6qp6CfeBKZZ066z980YIFuvu+MI1FDy8q6W0kHV6WMn+aBw8lymZbosux2thK4xy8nmmkPo/hh/l0Nr81Ebdp0Ei9rGcQvCYquUK/T8lemL6pUWBKdAxMkl81+Ke2cZLPci6apLsafxz+cDnQt1dZryNlLpg4BuzvPCaiNOtDTD/QwJKhXF/kKaUiZ46YCTI2azLaMTjrNl9/t9QfnDfda39fXRlBEMSP2hfm1nsvXTc32F4FJ241yQKwee3OyXcsym6Ov3PAHzPYJbB9bE+8HLtW3mPWyRUPT5Kg==
+  template:
+    data: null
+    metadata:
+      annotations:
+        managed-by: argocd.argoproj.io
+      creationTimestamp: null
+      labels:
+        argocd.argoproj.io/secret-type: repo-creds
+      managedFields:
+      - apiVersion: v1
+        fieldsType: FieldsV1
+        fieldsV1:
+          f:data:
+            .: {}
+            f:sshPrivateKey: {}
+            f:url: {}
+          f:metadata:
+            f:annotations:
+              .: {}
+              f:managed-by: {}
+            f:labels:
+              .: {}
+              f:argocd.argoproj.io/secret-type: {}
+          f:type: {}
+        manager: argocd-server
+        operation: Update
+        time: "2021-10-16T18:11:34Z"
+      name: argocd-github-key
+      namespace: argocd
+    type: Opaque
+
