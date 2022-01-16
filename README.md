@@ -78,7 +78,7 @@ repo-1340168060). Save this as key.yaml.
 
 11. Run the following command to generate a sealed key and then move it to the right location with the right name:
     ```
-    kubeseal --controller-namespace sealed-secrets --format yaml <key.yaml >sealedkey.yaml
+    kubeseal --controller-namespace sealed-secrets --format yaml < key.yaml > sealedkey.yaml
     mv sealedkey.yaml kustom/argo-cd/base/argocd-repo-key.yaml
     ```
     
