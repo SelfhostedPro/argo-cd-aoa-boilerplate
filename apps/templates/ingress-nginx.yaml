@@ -1,7 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: ingress-nginx
+  namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -10,9 +11,11 @@ spec:
     namespace: argocd
   project: default
   source:
-    path: apps/
+    path: kustom-charts/ingress-nginx
     repoURL: git@github.com:SelfhostedPro/argo-cd-aoa-boilerplate.git
     targetRevision: master
+    plugin:
+      name: kustomized-helm
   syncPolicy:
     automated:
       prune: true

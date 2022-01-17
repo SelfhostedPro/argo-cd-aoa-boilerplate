@@ -5,5 +5,7 @@ resources:
 - templates/argocd.yaml
 - templates/root.yaml
 - templates/sealed-secrets.yaml
+- templates/ingress-nginx.yaml
+- templates/kube-prometheus-stack.yaml
 
 namespace: argocd

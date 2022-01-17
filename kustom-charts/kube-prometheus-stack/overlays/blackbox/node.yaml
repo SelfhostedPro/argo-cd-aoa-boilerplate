@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argus-prometheus-blackbox-exporter
+spec:
+  template:
+    spec:
+      nodeSelector:
+        grafana.node: running

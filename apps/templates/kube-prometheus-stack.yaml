@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kube-prometheus-stack
+  namespace: monitoring
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+  annotations:
+  - notifications.argoproj.io/subscribe.on-sync-succeeded.slack: devops-notifications
+  - notifications.argoproj.io/subscribe.on-deployed.slack: devops-notifications
+  - notifications.argoproj.io/subscribe.on-sync-running.slack: devops-notifications
+  - notifications.argoproj.io/subscribe.on-sync-failed: devops-notifications
+  - notifications.argoproj.io/subscribe.on-sync-status-unknown: devops-notifications
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: monitoring
+  project: default
+  source:
+    path: kustom-charts/kube-prometheus-stack
+    repoURL: git@github.com:SelfhostedPro/argo-cd-aoa-boilerplate.git
+    targetRevision: master
+    plugin:
+      name: kustomized-helm
+  syncPolicy:
+    manual:
+    syncOptions:
+    - CreateNamespace=true

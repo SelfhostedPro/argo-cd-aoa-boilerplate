@@ -6,8 +6,13 @@ resources:
   - base/argocd-repo-key.yaml
   - base/argocd-cm.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.1.3/manifests/install.yaml
+  - base/argocd-ingress.yaml
+  - repos/
 
 patchesStrategicMerge:
   - overlays/argo-cd-server-deployment.yaml
+  - overlays/argocd-cm-configmap.yaml
+  - overlays/argocd-ssh-known-hosts-cm.yaml # Fix for argo issue
+
 
 namespace: argocd

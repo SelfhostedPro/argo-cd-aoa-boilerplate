@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+data:
+  helm.repositories: |
+    - name: stable
+      url: https://charts.helm.sh/stable
+    - name: prometheus-community
+      url: https://prometheus-community.github.io/helm-charts
+  resource.customizations.health.bitnami.com_SealedSecret: |
+    hs = {}
+    hs.status = "Healthy"
+    hs.message = "Controller doesn't report resource status"
+    return hs
+  configManagementPlugins: |
+    - name: kustomized-helm
+      generate:
+        command: [sh, -c]
+        args: ["kustomize build --enable-helm"]

@@ -1,0 +1,20 @@
+helmCharts:
+- name: kube-prometheus-stack
+  releaseName: boilerplate
+  version: 23.1.1
+  repo: https://prometheus-community.github.io/helm-charts
+  valuesFile: values.yaml
+- name: prometheus-blackbox-exporter
+  releaseName: boilerplate
+  version: 5.3.1
+  repo: https://prometheus-community.github.io/helm-charts
+
+resources:
+  # - "base/grafana/datasources/datasource.yaml" uncomment this and replace the path with any datasources you want to add.
+  - "base/grafana/secrets/grafana-secret.yaml"
+
+patchesStrategicMerge:
+  - "overlays/grafana/delete-grafana-secret.yaml"
+  # Uncomment these and modify them if you want to force grafana onto a certain node.
+  # - "overlays/grafana/node.yaml"
+  # - "overlays/blackbox/node.yaml"
