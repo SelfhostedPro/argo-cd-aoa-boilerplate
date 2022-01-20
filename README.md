@@ -27,9 +27,9 @@ When using a public repo we're not going to need to setup sealed secrets (At lea
    ```
 
 3. Finally change `kustom/argo-cd/kustomization.yaml` and remove the following line:
-  ```yaml
+   ```yaml
    - base/argocd-repo-key.yaml
-  ```
+   ```
   
 **End of public repo setup**
 
